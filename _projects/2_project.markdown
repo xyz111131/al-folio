@@ -1,66 +1,58 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: /assets/img/3.jpg
+title: Single-cell omics
+description: single cell RNA-Sequencing data analysis with application to neurodegenerative diseases
+img: /assets/img/single_cell1.png
 importance: 2
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Single-cell sequencing is a fast-growing technology in biology. It enables us to study the mechanism of biogical processes and diseases at single cell level. Single-cell RNA sequencing (scRNASeq) measures gene expression in each individual cell, allowing for identifying novel cell types; single-cell DNA sequencing can detect somatic mutations, which can be used to trace the evolution of cell lineages; single-cell ATAC-Seq can identify regulatory regions in each cell, in order to infer cell-type specific transcriptional networks. We are working on developing statistical tools to analyze single-cell sequencing data and integrate different omics to study the dynamics of cell states.  
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/fcell-06-00028-g001.jpeg' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Timeline of single cell sequencing techonologies. (https://www.frontiersin.org/articles/10.3389/fcell.2018.00028/full)
 </div>
+
+A main challenge in analyzing scRNA-seq data is to reduce technical variations yet retain cell heterogeneity. Due to low mRNAs content per cell and molecule losses during the experiment (called ''dropout"), the gene expression matrix has a substantial amount of zero read counts. Some of the zeros as technical artifacts because of "dropout" and others are biological true zero as the gene is not expressed in the cell. The idea of imputation is to use the gene expression of other similar cells and co-expressed genes (e.g. in the same pathway) to identify whether the zero is true biological zero or "dropout", and impute the true gene expression for the latter case. Existing imputation methods treat either each cell or each gene as independently and identically distributed, which oversimplifies the gene correlation and cell type structure. We propose a statistical model-based approach, called SIMPLEs (SInglecell RNA-seq iMPutation and celL clustErings), which iteratively identifies correlated gene modules and cell clusters and imputes dropouts customized for individual gene module and cell type. Simultaneously, it quantifies the uncertainty of imputation and cell clustering via multiple imputations. We model the gene expression by a mixture of zero-inflated censored multivariate Gaussian distribution, where the zero component is for "dropout" event. We then model the co-expression of gene modules by a factor model. 
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/simples1.png' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Overview of SIMPLEs. SIMPLEs outputs the imputed gene expression matrix, cell clusters and gene modules.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+By applying SIMPLEs to several real datasets, we could identify cell clusters and discovered gene modules that can further classify subtypes of cells. Our imputations successfully recovered the expression trends of marker genes in stem cell differentiation and can discover putative pathways regulating biological processes. 
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/simples2.png' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+     t-SNE visualization of imputed data by SIMPLEs for mouse immune cells.
 </div>
 
+Based on scRNASeq data, we study microglial-derived inflammation in neurodegenerative diseases and identify a subclass of microglia in mouse models of amyotrophic lateral sclerosis (ALS) which we term RIPK1-Regulated Inflammatory Microglia (RRIMs). RRIMs show significant up-regulation of classical proinflammatory pathways, and can be suppressed by inhibiting RIPK1. These findings help to elucidate a mechanism by which RIPK1 kinase inhibition has been shown to provide therapeutic benefit in mouse models of ALS and may provide an additional biomarker for analysis in ongoing phase 2 clinical trials of RIPK1 inhibitors in ALS. In the study of brain endothelial cells (EC) in Alzheimer’s Disease (AD), we find selective reduction of venous and capillary ECs in AD.
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/single_cell_AD.png' | relative_url }}" alt="" title="example image"/>
+    </div>
+</div>
+<div class="caption">
+     scRNA-Seq of Brain ECs Reveals a Selective Reduction of vECs and capECs in AD.
+</div>
+
+<!---
 The code is simple.
 Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
 To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
@@ -76,3 +68,4 @@ Here's the code for the last row of images above:
     </div>
 </div>
 ```
+-->
