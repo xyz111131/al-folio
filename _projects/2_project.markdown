@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Single-cell omics
-description: single cell RNA-Sequencing data analysis with application to neurodegenerative diseases
+description: single cell RNASeq data analysis with application to neurodegenerative diseases
 img: /assets/img/single_cell1.png
 importance: 2
 category: work
@@ -51,6 +51,16 @@ Based on scRNASeq data, we study microglial-derived inflammation in neurodegener
 <div class="caption">
      scRNA-Seq of Brain ECs Reveals a Selective Reduction of vECs and capECs in AD.
 </div>
+
+# References
+
+* Zhirui Hu, Songpeng Zu, Jun S Liu. SIMPLEs: a single-cell RNA sequencing imputation strategy preserving gene modules and cell clusters variation. NAR Genomics and Bioinformatics, 2020, 2(4): lqaa077. <a href="https://academic.oup.com/nargab/article/2/4/lqaa077/5912574">Link</a>
+
+* Lauren Mifflin, Zhirui Hu, Connor Dufort, Cynthia C Hession, Alec J Walker, Kongyan Niu, Hong Zhu, Nan Liu, Jun S Liu, Joshua Z Levin, Beth Stevens, Junying Yuan, and Chengyu Zou. A RIPK1-Regulated Inflammatory Microglial State in Amyotrophic Lateral Sclerosis. Proceedings of the National Academy of Sciences, 2021, 118 (13): e2025102118. <a href="https://www.pnas.org/content/118/13/e2025102118">Link</a>
+
+* Chengyu Zou, Lauren Mifflin, Zhirui Hu, Tian Zhang, Bing Shan, Huibing Wang, Xin Xing, Hong Zhu, Xian Adiconis, Joshua Z. Levin, Fupeng Li, Chuan-Fa Liu, Jun S. Liu, Junying Yuan. Reduction of mNAT1/hNAT2 Contributes to Cerebral Endothelial Necroptosis and Aβ Accumulation in Alzheimer’s Disease. Cell Reports, 2020, 33(10): 108447.  <a href="https://www.sciencedirect.com/science/article/pii/S2211124720314364">Link</a>
+
+* <a href="https://github.com/JunLiuLab/SIMPLEs">SIMPLEs</a>: single-cell RNA sequencing imputation and clustering. R package.
 
 <!---
 The code is simple.

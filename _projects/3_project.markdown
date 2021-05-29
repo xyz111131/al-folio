@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Deep neural networks for measurement error model
-description: from nonparametric methods to deep neural networks
+title: Deep learning
+description: for measurement error model, from nonparametric methods to deep neural networks
 img: /assets/img/nn1.png
 importance: 3
 category: work
@@ -38,3 +38,7 @@ We conduct an extensive numerical study to compare the neural network approach w
 <div class="caption">
 A simulation of measurement error model. The true function is generated from Gaussian processes. Compare NNME with different priors and GP method (KALE). 
 </div>
+
+References:
+
+* Z Hu, ZT Ke, JS Liu. Measurement error models: from nonparametric methods to deep neural networks. <a href="https://arxiv.org/abs/2007.07498">Link</a>

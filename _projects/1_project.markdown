@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Bayesian methods for detecting convergence on phylogenetic tree
-description: Bayesian modeling and phylogenetics; functional genomics
+title: Bayesian phylogenetics
+description:  Bayesian methods for detecting convergence on phylogenetic tree
 img: /assets/img/3.jpg
 importance: 1
 category: work
@@ -41,6 +41,13 @@ Another major issue not addressed by previous model is the possible heterogeneit
 <div class="caption">
     PhyloAcc identifies CNEEs associated with phenotype changes in marine mammals. The functions of these CNEEs enrich in morphological traits and nervous, immune systems. 
 </div>
+
+# References
+* Zhirui Hu, Timothy B. Sackton, Scott V. Edwards, Jun S. Liu. Bayesian detection of convergent rate changes of conserved noncoding elements on phylogenetic trees. Molecular Biology and Evolution. 2019 36(5): 1086–1100. <a href="https://academic.oup.com/mbe/article/36/5/1086/5372678">Link</a>
+
+* Timothy B. Sackton, Phil Grayson, Alison Cloutier, Zhirui Hu, Jun S. Liu, Nicole E. Wheeler, Paul P. Gardner, Julia A. Clarke, Allan J. Baker, Michele Clamp, Scott V. Edwards. Convergent regulatory evolution and loss of flight in palaeognathous birds. Science 2019 364(6435):74-78. <a href="https://science.sciencemag.org/content/364/6435/74">Link</a>
+
+*<a href="https://github.com/xyz111131/PhyloAcc">PhyloAcc</a>: a software to detect the changes of conservation of a genomic region. C/C++
 
 
 <!---
