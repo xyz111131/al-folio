@@ -47,7 +47,7 @@ Another major issue not addressed by previous model is the possible heterogeneit
 
 * Timothy B. Sackton, Phil Grayson, Alison Cloutier, Zhirui Hu, Jun S. Liu, Nicole E. Wheeler, Paul P. Gardner, Julia A. Clarke, Allan J. Baker, Michele Clamp, Scott V. Edwards. Convergent regulatory evolution and loss of flight in palaeognathous birds. Science 2019 364(6435):74-78. <a href="https://science.sciencemag.org/content/364/6435/74">Link</a>
 
-*<a href="https://github.com/xyz111131/PhyloAcc">PhyloAcc</a>: a software to detect the changes of conservation of a genomic region. C/C++
+* <a href="https://github.com/xyz111131/PhyloAcc">PhyloAcc</a>: a software to detect the changes of conservation of a genomic region. C/C++
 
 
 <!---
