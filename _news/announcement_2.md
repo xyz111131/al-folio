@@ -1,3 +1,9 @@
+---
+layout: post
+date: 2021-10-26
+inline: true
+---
+
 Postdoctoral fellow or Research Assistant Position
 
 Job description: 
