@@ -8,9 +8,9 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>Assistant professor</p>
-    <p><a href="http://www.stat.tsinghua.edu.cn/en/">Center for statistical science</a></p>
-    <p>Tsinghua University</p>
+    <p>Bioinformatics Fellow</p>
+    <p><a href="https://docpollard.org/">Data Science and Biotechnology</a></p>
+    <p>Gladstone Institutes</p>
  
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
